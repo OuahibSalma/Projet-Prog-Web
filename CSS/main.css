@@ -1,0 +1,51 @@
+*{ 
+    padding: 0 ; 
+    margin: 0 ; 
+    box-sizing: border-box;
+} 
+body { 
+    background-repeat:no-repeat ;
+    background-position-y: 80%;
+    background-size: 100% ;
+}
+img { 
+    border-top-right-radius: 30px ; 
+    border-top-left-radius: 30px ; 
+    height: 100%;
+}
+/* .btn1 { 
+border: none ; 
+outline: none ; 
+height: 50px ; 
+width: 100% ; 
+background-color: black; 
+color: white ; 
+border-radius: bold ; 
+} 
+.btn1:hover { 
+    background: white ; 
+    border: 1px solid ; 
+    color: black ;  
+    width: 100%;
+}  */
+section { 
+    display: none ;
+} 
+h1{ 
+    margin-left: 25% ;
+   display: inline ; 
+} 
+h4 { 
+    padding-top: 1px ; 
+    margin-left: 25% ; 
+    display: inline ;
+} 
+.col { 
+    display: flex ; 
+    justify-content: space-between ;
+} 
+.btn{
+    background-image: url(../images/btnsBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -2,7 +2,7 @@
  $host = "localhost"; // Nom d'hôte
  $user = "root"; // Nom d'utilisateur
  $pass = ""; // Mot de passe
- $db = "a6"; // Nom de la base de données 
+ $db = "projet-prog-web"; // Nom de la base de données 
      $conn = mysqli_connect($host, $user, $pass, $db); 
  // Vérifier la connexion
  if (!$conn) {
