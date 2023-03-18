@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css"> 
+    <style> 
+        *{ 
+            padding: 0 ; 
+            margin: 0 ; 
+            box-sizing: border-box;
+        } 
+        body { 
+            background-repeat:no-repeat ;
+            background-size: 100% ;
+        } 
+        div { 
+            margin-left: 25% ; 
+            margin-top: 10%  ;
+            background: white ;
+            border-radius: 30px ; 
+            box-shadow: 12px 12px 22px grey ;  
+            position: center ; 
+            /* height: auto; */
+            background-size: cover;
+        }  
+        .row { 
+            background: white ;
+            border-radius: 30px ; 
+            box-shadow: 12px 12px 22px grey ;
+        } 
+        img { 
+            border-top-right-radius: 30px ; 
+            border-top-left-radius: 30px ; 
+            height: 100%;
+        }
+        .btn1 { 
+        border: none ; 
+        outline: none ; 
+        height: 50px ; 
+        width: 100% ; 
+        background-color: black; 
+        color: white ; 
+        border-radius: bold ; 
+        } 
+        .btn1:hover { 
+            background: white ; 
+            border: 1px solid ; 
+            color: black ;  
+            width: 100%;
+        } 
+        section { 
+            display: none ;
+        } 
+        h1{ 
+            margin-left: 25% ;
+           display: inline ; 
+        } 
+        h4 { 
+            padding-top: 1px ; 
+            margin-left: 25% ; 
+            display: inline ;
+        } 
+        .col { 
+            display: flex ; 
+            justify-content: space-between ;
+        } 
+    </style>
+</head>
+<body background="./background.jpg"> 
+    <div class="container"> 
+        <div class="row no-gutters">   
+            <h1 class="font-weight-bold py-3"><center>Bienvenue dans notre site web</center></h1> <br>
+            <h4>Veuillez me dire quelle est votre profession :  <h4>  <br>
+            <div class="black-border" class="col-lg-4"> 
+                <button name="profession" id="prof" onclick="profession();"> 
+                    professeur
+                </button>
+            </div>  
+            <div  class="black-border" class="col-lg-4"> 
+                <button name="profession" id="etud" onclick="profession();">  Etudiant </button> 
+            </div> 
+            <div  class="black-border" class="col-lg-4"> 
+                <button name="profession" id="admin" onclick="profession();"> Directeur </button>   
+            </div> 
+    </div> 
+
+    </div>
+    
+    
+    <section class="form my-4 mx-5"> 
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-5"> 
+                    <img src="./shigatsu 2.jpg" width = "500" height = "1000px" alt="Check Your connection " >
+                </div> 
+                <div class="col-lg-7 px-5 pt-5 "> 
+                    <h1 class="font-weight-bold py-3">S'authentifier </h1>
+                    <form action="" method="post"> 
+                        <div class="form-row"> 
+                            <div class="col-lg-7"> 
+                                <input type="email" placeholder ="Votre email" class="form-control my-3 p-2"> 
+                            </div> 
+                            <div class="col-lg-7"> 
+                                <input type="password" placeholder ="Votre mot de passe " class="form-control my-3 p-2"> 
+                            </div>
+                            <div class="col-lg-7"> 
+                                <button class="btn1 mt-3 mb-1 ">S'authentifier</button>
+                            </div> 
+                            <div class="col-lg-7"> 
+                                <a href="#">Le mot de passe oublié ? </a>
+                            </div>    
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./JS/traitement.js"></script>
+</body>
+</html>
