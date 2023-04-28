@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedIn'])){
+    $_SESSION['loggedIn'] = false ;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +24,12 @@
         <div class="row mt-5"> 
             <div class="col-md-1"></div>  
             <div class="col-md-3 mx-3"> 
-                <button class="btn btn-light text-light p-5 fs-3 text-center fw-bold" name="profession" id="prof" onclick="profession('prof');"> 
+                <button class="btn btn-light text-light p-5 fs-3 text-center fw-bold" name="profession" id="prof" onclick="profession('professeur');"> 
                     professeur
                 </button>
-            </div>  
+            </div>
             <div class="col-md-3 mx-3"> 
-                <button class="btn btn-light text-light p-5 fs-3 text-center fw-bold" name="profession" id="etud" onclick="profession('etud');">  Etudiant </button> 
+                <button class="btn btn-light text-light p-5 fs-3 text-center fw-bold" name="profession" id="etud" onclick="profession('etudiant');">  Etudiant </button> 
             </div> 
             <div  class="col-md-3 mx-3"> 
                 <button class="btn btn-light text-light p-5 fs-3 text-center fw-bold" name="profession" id="admin" onclick="profession('admin');"> Directeur </button>   

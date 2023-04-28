@@ -54,6 +54,8 @@ class Utilisateur {
     public function setPassword($password){
         $this->password=$password ;
     }
+
+
 }
 
 ?>

@@ -4,6 +4,7 @@
     box-sizing: border-box;
 } 
 body { 
+    height: 100%;
     background-repeat:no-repeat ;
     background-position-y: 90%;
     background-size: 100% ;
